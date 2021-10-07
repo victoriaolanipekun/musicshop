@@ -1,0 +1,109 @@
+$darken: 35%;
+
+.widget-progress-circle-trail-path {
+    stroke: darken($brand-success, $darken);
+}
+
+.progress-rounded {
+    .widget-progress-circle-path {
+        stroke-linecap: round;
+    }
+}
+
+.widget-progress-circle {
+    path.widget-progress-circle-path {
+        stroke: $brand-success;
+    }
+
+    path.widget-progress-circle-trail-path {
+        stroke: darken($brand-success, $darken);
+    }
+
+    .progressbar-text {
+        color: $brand-success !important;
+    }
+}
+
+.widget-progress-circle-primary {
+    path.widget-progress-circle-path {
+        stroke: $brand-primary;
+    }
+
+    path.widget-progress-circle-trail-path {
+        stroke: darken($brand-primary, $darken);
+    }
+
+    .progressbar-text {
+        color: $brand-primary !important;
+    }
+}
+
+.widget-progress-circle-info {
+    path.widget-progress-circle-path {
+        stroke: $brand-info;
+    }
+
+    path.widget-progress-circle-trail-path {
+        stroke: darken($brand-info, $darken);
+    }
+
+    .progressbar-text {
+        color: $brand-info !important;
+    }
+}
+
+.widget-progress-circle-success {
+    path.widget-progress-circle-path {
+        stroke: $brand-success;
+    }
+
+    path.widget-progress-circle-trail-path {
+        stroke: darken($brand-success, $darken);
+    }
+
+    .progressbar-text {
+        color: $brand-success !important;
+    }
+}
+
+.widget-progress-circle-warning {
+    path.widget-progress-circle-path {
+        stroke: $brand-warning;
+    }
+
+    path.widget-progress-circle-trail-path {
+        stroke: darken($brand-warning, $darken);
+    }
+
+    .progressbar-text {
+        color: $brand-warning !important;
+    }
+}
+
+.widget-progress-circle-danger {
+    path.widget-progress-circle-path {
+        stroke: $brand-danger;
+    }
+
+    path.widget-progress-circle-trail-path {
+        stroke: darken($brand-danger, $darken);
+    }
+
+    .progressbar-text {
+        color: $brand-danger !important;
+    }
+}
+
+.widget-progress-circle-inverse {
+    path.widget-progress-circle-path {
+        stroke: $brand-inverse;
+    }
+
+    path.widget-progress-circle-trail-path {
+        stroke: darken($brand-inverse, $darken);
+    }
+
+    .progressbar-text {
+        color: $brand-inverse !important;
+    }
+}

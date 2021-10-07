@@ -1,0 +1,171 @@
+@import './custom-variables';
+
+.btn {
+    border-width: 2px;
+    font-weight: 600;
+
+    &:hover,
+    &:focus {
+        color: #fff;
+    }
+}
+
+.btn-default {
+
+    &:hover,
+    &:focus {
+        color: #fff;
+    }
+}
+
+.btn-default {
+
+    &:hover,
+    &:focus {
+        color: #fff;
+    }
+}
+
+.btn-reset {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 10;
+}
+
+.back-button-container {
+    margin-bottom: 15px;
+
+    .btn-back {
+        position: relative;
+        display: inline-block;
+        align-content: center;
+        margin-left: 15px;
+        font-size: 15px;
+        color: $brand-primary;
+
+        &:before {
+            content: "";
+            border-right: 2px solid $brand-primary;
+            border-top: 2px solid $brand-primary;
+            height: 9px;
+            width: 9px;
+            display: block;
+            position: absolute;
+            transform: rotate(225deg);
+            left: -10px;
+            top: 7px;
+        }
+
+        &:hover {
+            &:before {
+                -moz-animation: bounce 2s ease-in-out;
+                -webkit-animation: bounce 2s ease-in-out;
+                animation: bounce 2s ease-in-out;
+            }
+        }
+    }
+}
+
+@-moz-keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        left: -10px;
+    }
+
+    40% {
+        left: -5px;
+    }
+
+    60% {
+        left: 0;
+    }
+}
+
+@-webkit-keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        left: -10px;
+    }
+
+    40% {
+        left: -5px;
+    }
+
+    60% {
+        left: 0;
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        left: -10px;
+    }
+
+    40% {
+        left: -16px;
+    }
+
+    60% {
+        left: -13px;
+    }
+}
+
+.mx-datepicker button {
+    border-radius: 3px;
+    color: $brand-primary;
+    border-color: $brand-primary;
+
+    &:hover,
+    &:focus {
+        background-color: $brand-primary;
+        color: #fff;
+        border-color: $brand-primary;
+    }
+}
+
+.btn-mobile {
+    @media (max-width: $screen-sm) {
+        width: 100%;
+    }
+}
+
+.btn-uploader button {
+    color: $brand-primary;
+    position: relative;
+
+    &::after {
+        content: "Upload photo";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        color: $brand-primary;
+        background-color: inherit;
+    }
+}
+
+button[aria-disabled="false"],
+a[aria-disabled="false"] {
+    cursor: pointer;
+    pointer-events: auto;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}

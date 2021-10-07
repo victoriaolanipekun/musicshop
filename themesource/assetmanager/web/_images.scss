@@ -1,0 +1,113 @@
+.img-asset {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    object-position: center center;
+
+    @media (max-width: $screen-xs) {
+        width: 100% !important;
+    }
+}
+
+.img-asset-sm {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    object-position: center center;
+
+    @media (max-width: $screen-xs) {
+        width: 100% !important;
+    }
+}
+
+img.fit-contain,
+.fit-contain img {
+    object-fit: contain !important;
+}
+
+img.fit-fill,
+.fit-fill img {
+    object-fit: fill !important;
+}
+
+img.fit-scale-down,
+.fit-scale-down img {
+    object-fit: scale-down !important;
+}
+
+img.fit-cover,
+.fit-cover img {
+    object-fit: cover !important;
+}
+
+img.fit-none,
+.fit-none img {
+    object-fit: none !important;
+}
+
+img.fit-scale-down,
+.fit-scale-down img {
+    object-fit: scale-down;
+}
+
+img.img-boxshadow,
+.img-boxshadow img {
+    -webkit-box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.1);
+}
+
+img.position-left-top,
+.position-left-top img {
+    object-position: left top !important;
+}
+
+img.position-left-center,
+.position-left-center img {
+    object-position: left center !important;
+}
+
+img.position-left-bottom,
+.position-left-bottom img {
+    object-position: left bottom !important;
+}
+
+img.position-right-top,
+.position-right-top img {
+    object-position: right top !important;
+}
+
+img.position-right-center,
+.position-right-center img {
+    object-position: right center !important;
+}
+
+img.position-right-bottom,
+.position-right-bottom img {
+    object-position: right bottom !important;
+}
+
+img.position-center-top,
+.position-center-top img {
+    object-position: center top !important;
+}
+
+img.position-center-center,
+.position-center-center img {
+    object-position: center center !important;
+}
+
+img.position-center-bottom,
+.position-center-bottom img {
+    object-position: center bottom !important;
+}
+
+
+.img-signature {
+    margin: 15px 0;
+    border: 2px solid #d0d0d0;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 20px;
+    position: relative;
+    background: $gray-lighter;
+}

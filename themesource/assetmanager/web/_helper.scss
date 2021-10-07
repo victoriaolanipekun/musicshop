@@ -1,0 +1,40 @@
+.bg-inherit {
+    background: inherit !important;
+}
+
+.t-main {
+    .wm-hide {
+        display: none !important;
+    }
+}
+
+
+.border-large {
+    border-width: 2px;
+}
+
+
+.text-opacity {
+    opacity: 0.9;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.appearance-none {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+
+    @media (max-width: $screen-xs) {
+        .flexitem {
+            margin-right: 0;
+            flex: 1 1 100%;
+        }
+    }
+}

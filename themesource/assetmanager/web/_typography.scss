@@ -1,0 +1,29 @@
+@mixin max-lines($lines, $line-height, $font-size) {
+    max-height: ($line-height * $font-size) * $lines;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lines;
+}
+
+.text-metric {
+    line-height: 0.8;
+}
+
+.word-spacing {
+    margin-right: 2px;
+}
+
+.max-lines-1 {
+    @include max-lines(1, 1.5, 14px);
+}
+
+.max-lines-2 {
+    @include max-lines(2, 1.5, 14px);
+}
+
+.max-lines-3 {
+    @include max-lines(3, 1.5, 14px);
+}

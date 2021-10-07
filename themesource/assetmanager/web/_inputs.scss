@@ -1,0 +1,332 @@
+@import '../../atlas_core/web/core/helpers/button';
+
+.widget-text-box-search {
+    background: inherit;
+
+    .search-bar {
+        position: relative;
+        padding-bottom: 0;
+
+        .form-control {
+            background: inherit;
+            border: 0;
+            font-size: $font-size-h4;
+            box-shadow: inset 0 0 0 200px rgba(255, 255, 255, .9);
+            padding: 1em 0.75em;
+            font-weight: bold;
+            width: 100%;
+            border-radius: 6px;
+
+            &::placeholder {
+                color: $gray-darker;
+                font-weight: normal;
+            }
+        }
+
+        button {
+            height: 100%;
+            top: 0;
+            right: 0;
+            border-radius: 0 $border-radius-default $border-radius-default 0;
+            background: inherit;
+            width: 44px;
+            padding: 0;
+            color: $gray-light;
+            border: 0;
+
+            .glyphicon {
+                font-size: $font-size-h4;
+            }
+
+            &:hover {
+                color: $gray-darker;
+            }
+        }
+    }
+}
+
+.control-label, .form-group .control-label {
+    font-weight: 600;
+    color: $gray-darker;
+}
+
+.form-control {
+    border-radius: 3px;
+    border: 2px solid #d0d0d0;
+    padding: 8px;
+    font-size: 16px;
+    color: $gray-darker;
+    font-weight: 400;
+
+    &:focus {
+        border-color: $brand-primary;
+    }
+}
+
+.btn-group {
+    display: flex;
+
+    .btn {
+        display: flex;
+        font-size: 24px;
+        padding: 0 16px;
+        line-height: 1.4;
+        border: 2px solid #d0d0d0;
+        color: #000;
+
+        &:first-child {
+            border-right: 1px solid #d0d0d0;
+        }
+
+        &:last-child {
+            border-left: 1px solid #d0d0d0;
+        }
+    }
+
+    .form-group {
+        margin-bottom: 0;
+    }
+
+    .form-control {
+        border-top: 2px solid #d0d0d0;
+        border-bottom: 2px solid #d0d0d0;
+        border-left: 1px solid #d0d0d0;
+        border-right: 1px solid #d0d0d0;
+        border-radius: 0;
+        padding: 8px;
+        width: 56px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+}
+
+.widget-switch-label {
+    .form-group, .form-group:not(.label-after) {
+        height: 47px;
+        display: flex;
+        align-content: center;
+        flex-direction: row;
+
+        &:before, &:after {
+            display: none;
+        }
+
+        div[class*="col-"] {
+            padding: 0;
+            float: none;
+            width: auto;
+            align-self: center;
+
+            &:first-child {
+                flex: 1;
+                max-width: 100%;
+            }
+
+            &:last-child {
+                flex: 0 0 auto;
+            }
+        }
+
+        .control-label {
+            float: none;
+            margin-bottom: 0;
+            padding: 0;
+        }
+
+        .widget-switch-checkbox, .widget-switch-btn-wrapper, .widget-switch {
+            margin: 0;
+            float: none;
+        }
+    }
+}
+
+
+.signature {
+    border: 2px solid #d0d0d0;
+    padding: 15px;
+    position: relative;
+
+    .widget-signature-wrapper {
+        width: 100% !important;
+        margin: 15px 0;
+        min-height: 250px;
+        position: relative !important;
+
+        canvas {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.widget-signature-wrapper {
+    &:before {
+        content: "";
+        position: relative;
+        border-bottom: 2px solid #d0d0d0;
+        margin-bottom: 30px;
+        background-image: url($signature);
+        background-size: 27.27px;
+        background-repeat: no-repeat;
+        background-position: left 170px;
+        max-height: 250px;
+        width: 100%;
+        margin-left: 35px;
+        margin-right: 25px;
+        border-radius: 0;
+    }
+
+    canvas, img {
+        width: 100%;
+        max-height: 250px;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-bottom: 20px;
+        opacity: 1;
+
+        @media (max-width: $screen-xs) {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+
+    .btn {
+        border-radius: 50%;
+        padding: 0;
+        font-size: 0;
+        background: $brand-default;
+        border: 0;
+        height: 32px !important;
+        width: 32px !important;
+        position: absolute;
+        right: 25px;
+        top: 0;
+
+        @media (max-width: $screen-xs) {
+            right: 0px;
+        }
+
+        &:before {
+            position: relative;
+            top: 1px;
+            display: inline-block;
+            font-family: 'Glyphicons Halflings';
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            content: "\e014";
+            font-size: 16px;
+            color: #000;
+        }
+    }
+}
+
+.has-error {
+    .form-control {
+        border-color: $alert-danger-color;
+    }
+}
+
+.mx-validation-message {
+    padding: 0 0 5px;
+}
+
+.fake-validation {
+    .form-control {
+        display: none;
+    }
+}
+
+.mx-imageuploader {
+    padding-bottom: 0;
+
+    input.form-control {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .btn.mx-fileinput-upload-button {
+        @extend .btn-primary !optional;
+        @extend .appearance-none;
+        width: 180px;
+        margin-left: 0;
+
+        @media (max-width: $screen-xs) {
+            width: 100%;
+        }
+    }
+}
+
+.rb-buttons.mx-radiobuttons {
+    margin: 0;
+
+    .mx-radiogroup {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        align-items: center;
+        justify-content: flex-start;
+        flex-flow: wrap;
+        padding: 0;
+
+        .radio {
+            margin-right: 15px;
+        }
+    }
+
+    .radio {
+        font-size: $font-size-h5;
+        transition: all 1s ease;
+        position: relative;
+        cursor: pointer;
+        margin-left: 0;
+        margin-right: 15px;
+
+        @media (max-width: $screen-sm) {
+            width: 100%;
+            margin-right: 0;
+        }
+
+        label {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+            background: $gray-lighter;
+            height: 44px;
+            padding: 15px 30px;
+            border: 2px solid $gray-lighter;
+            margin-bottom: 15px;
+            font-size: $font-size-h5;
+            transition: all 1s ease;
+            position: relative;
+            border-radius: 44px;
+        }
+
+        input[type=radio] {
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            position: absolute !important;
+
+            &:checked:disabled+label, &:checked+label {
+                background: $brand-primary;
+                border-color: $brand-primary;
+                color: #fff;
+            }
+        }
+    }
+}

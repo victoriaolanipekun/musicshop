@@ -1,0 +1,15 @@
+.layout-atlas {
+    .region-topbar {
+        .topbar-content {
+            align-content: center;
+        }
+    }
+}
+
+.flexcontainer {
+    .flexitem-main {
+        &.flex-initial {
+            flex: initial;
+        }
+    }
+}
